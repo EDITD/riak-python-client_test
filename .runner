@@ -60,10 +60,6 @@ function run_tests
     then
         tox
     else
-        if [[ $have_py2 == "true" ]]
-        then
-            python2 setup.py test
-        fi
         if [[ $have_py3 == "true" ]]
         then
             python3 setup.py test

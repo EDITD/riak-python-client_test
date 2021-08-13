@@ -94,11 +94,11 @@ endif
 	@echo "==> Python 3.5 (bdist_egg)"
 	@python3.5 setup.py build --build-base=py-build/3.5 bdist_egg upload --repository $(PYPI_REPOSITORY) --show-response --sign --identity $(RELEASE_GPG_KEYNAME)
 	@echo "==> Python 3.6 (bdist_egg)"
-	@python3.5 setup.py build --build-base=py-build/3.6 bdist_egg upload --repository $(PYPI_REPOSITORY) --show-response --sign --identity $(RELEASE_GPG_KEYNAME)
+	@python3.6 setup.py build --build-base=py-build/3.6 bdist_egg upload --repository $(PYPI_REPOSITORY) --show-response --sign --identity $(RELEASE_GPG_KEYNAME)
 	@echo "==> Python 3.7 (bdist_egg)"
-	@python3.5 setup.py build --build-base=py-build/3.7 bdist_egg upload --repository $(PYPI_REPOSITORY) --show-response --sign --identity $(RELEASE_GPG_KEYNAME)
+	@python3.7 setup.py build --build-base=py-build/3.7 bdist_egg upload --repository $(PYPI_REPOSITORY) --show-response --sign --identity $(RELEASE_GPG_KEYNAME)
 	@echo "==> Python 3.8 (bdist_egg)"
-	@python3.5 setup.py build --build-base=py-build/3.8 bdist_egg upload --repository $(PYPI_REPOSITORY) --show-response --sign --identity $(RELEASE_GPG_KEYNAME)
+	@python3.8 setup.py build --build-base=py-build/3.8 bdist_egg upload --repository $(PYPI_REPOSITORY) --show-response --sign --identity $(RELEASE_GPG_KEYNAME)
 
 .PHONY: unit-test
 unit-test:
